@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="sidebar-wrapper">
+            <div class="left-sidebar">
+                <button id="add-btn">Add</button> 
+                <table id="left-table">
+                </table>
+            </div>
+            <div class="right-sidebar">
+                <table id="right-table">
+                    <tr id="first-row"> 
+                        <th class="dates-row-wrapper">
+                            <div class="dates-row">
+                            </div>
+                        </th> 
+                    </tr>
+                </table>
+            </div>      
+        </div>
+    </main>
+
+    <dialog id="edit-dialog">
+        <form id="edit-form" method="dialog">
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" name="brand" required>
+            <label for="bar-wording">Bar Wording:</label>
+            <input type="text" id="bar-wording" name="bar-wording" required>
+            <label for="priority">Priority:</label>
+            <input type="text" id="priority" name="priority" required>
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+            <label for="initiative">Initiative (task):</label>
+            <input type="text" id="initiative" name="initiative" required>
+            <label for="sgs">SGS?:</label>
+            <input type="text" id="sgs" name="sgs" required>
+            <label for="effort">Level of Effort:</label>
+            <input type="text" id="effort" name="effort" required>
+            <label for="origin">Origin:</label>
+            <input type="text" id="origin" name="origin" required>
+            <label for="bar-color">Bar Color:</label>
+            <input type="text" id="bar-color" name="bar-color" required>
+            <div class="form-buttons">
+                <button type="submit">Save</button>
+                <button type="button" id="cancel-edit">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="add-dialog">
+        <form id="add-form" method="dialog">
+            <label for="brand-add">Brand:</label>
+            <input type="text" id="brand-add" name="brand" required>
+            <label for="bar-wording-add">Bar Wording:</label>
+            <input type="text" id="bar-wording-add" name="bar-wording" required>
+            <label for="priority-add">Priority:</label>
+            <input type="text" id="priority-add" name="priority" required>
+            <label for="start-date-add">Start Date:</label>
+            <input type="date" id="start-date-add" name="start-date" required>
+            <label for="end-date-add">End Date:</label>
+            <input type="date" id="end-date-add" name="end-date" required>
+            <label for="initiative-add">Initiative (task):</label>
+            <input type="text" id="initiative-add" name="initiative" required>
+            <label for="sgs-add">SGS?:</label>
+            <input type="text" id="sgs-add" name="sgs" required>
+            <label for="effort-add">Level of Effort:</label>
+            <input type="text" id="effort-add" name="effort" required>
+            <label for="origin-add">Origin:</label>
+            <input type="text" id="origin-add" name="origin" required>
+            <label for="bar-color-add">Bar Color:</label>
+            <input type="text" id="bar-color-add" name="bar-color" required>
+            <div class="form-buttons">
+                <button type="submit">Add</button>
+                <button type="button" id="cancel-add">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="index.js"></script>
+</body>
+</html>
