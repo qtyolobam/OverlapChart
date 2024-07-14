@@ -1284,7 +1284,6 @@ const sampleData = [
            let endYear = parseInt(endDate[2]);
    
            if (startDay > MONTHS[startMonth] || endDay > MONTHS[endMonth]) {
-               console.log(i, startDay, startMonth, endDay, endMonth);
                console.log("Invalid date: day exceeds the number of days in the month.");
                continue;
            }
@@ -1307,7 +1306,6 @@ const sampleData = [
        let datesRow = document.getElementsByClassName("dates-row")[0];
        datesRow.innerHTML = "";
        let yearRange = max.getFullYear() - min.getFullYear();
-       console.log(`year range = ${yearRange}`)
        for (let i = 0; i < yearRange + 1; i++) {
            for (let j = 0; j < Object.keys(MONTHS).length; j++) {
                if (i != 0 || (i == 0 && j >= min.getMonth())) {
@@ -1456,9 +1454,7 @@ document.getElementById('add-form').addEventListener('submit', function(event) {
     };
 
     sampleData.push(newEntry);
-    console.log(sampleData[sampleData.length-1])
     iterateOverData(sampleData);
-    console.log(min,max)
     createDateDivs();
     createDataDivs();
     document.getElementById('add-dialog').close();
